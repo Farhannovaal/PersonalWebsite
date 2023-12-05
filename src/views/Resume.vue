@@ -11,7 +11,7 @@ const skill = ref([
   "PHP",
   "SQL",
   "Node JS",
-  "Python",
+  "jQuery",
   "Laravel",
   "Vue",
   "React",
@@ -19,68 +19,61 @@ const skill = ref([
 
 const experience = ref([
   {
-    year: "2019 - Present",
-    job: "Web Developer",
-    location: "Stark Industries Los Angeles, CA",
-    description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
-  },
-  {
-    year: "2012 - Present",
+    year: "2023 - Present",
     job: "Full Stack Developer",
-    location: "Indonesia Jakarta",
+    location: "PT. Javan Cipta Solusi",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
+      "Collaborate with the team to develop website applications, handling both backend and frontend tasks using programming languages such as Javascript, Laravel, VueJs, and ReactJs.",
   },
   {
-    year: "2011 - Present",
-    job: "Frontend Developer",
-    location: "Indonesia Jakarta",
+    year: "2022 - 2023",
+    job: "Full Stack Developer",
+    location: "Wegodev Indonesia",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
+      "Enroll in courses and engage in practical application development to enhance skills and deepen understanding of programming languages.",
   },
   {
-    year: "2021 - Present",
-    job: "Backend Developer",
-    location: "Indonesia Jakarta",
+    year: "2022 - 2023",
+    job: "Mobile Developer Flutter",
+    location: "Build With Angga",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
+      "Enroll in a Flutter mobile development course, grasp the structure and coding principles of Flutter, and engage in hands-on practice to create mobile projects.",
   },
   {
-    year: "2033 - Present",
-    job: "Mobile Developer",
-    location: "Indonesia Jakarta",
+    year: "2022",
+    job: "Junior PHP Developer",
+    location: "Digitalent Kominfo x University Telkom",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
+      "Learn and comprehend the fundamental structure of PHP programming, then apply this knowledge by creating native PHP projects through practice.",
   },
 ]);
 
 const education = ref([
   {
-    year: "2011 - 2015",
-    major: "Bachelor of Computer Science",
-    location: "University of Indonesia",
+    year: "2021 - 2024",
+    major: "Management of Business",
+    location: "Ikopin University",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
+      "Study business management to directly apply the knowledge in practical work, particularly integrating it with IT skills. This will fuel your aspiration to pursue a career in the technology sector.",
   },
   {
-    year: "2008 - 2011",
+    year: "2019 - 2021",
     major: "Senior High School",
-    location: "SMK Negeri 1 Jakarta",
+    location: "MA Al Ihsan Baleendah",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
+      "Understand and study fundamental sciences to enhance critical thinking and communication skills with arabic and english language.",
   },
   {
-    year: "2005 - 2008",
+    year: "2015 - 2019",
     major: "Junior High School",
-    location: "SMP Negeri 1 Jakarta",
+    location: "MTS Nurul Iman",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
   },
   {
-    year: "1999 - 2005",
+    year: "2009 - 2015",
     major: "Elementary School",
-    location: "SD Negeri 1 Jakarta",
+    location: "MI Al - Husaeni",
     description:
       "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit fugiat quidem beatae modi eius possimus expedita, sint, eum perferendis dignissimos quas",
   },
@@ -123,8 +116,6 @@ const education = ref([
         </Card>
       </div>
     </div>
-  
-    
   </template>
   
   <style scoped>
