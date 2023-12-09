@@ -1,3 +1,31 @@
+<template>
+  <div class="row px-3 py-2 project-wrap">
+    <div class="col-md-4">
+      <div class="">
+        <img v-bind:src="image" alt="">
+      </div>
+    </div>
+    <div class="col-md-8 flex text-center" id="description">
+      <div>
+        <p id="job" class="font-weight-bold display-6">{{ props.job }}</p>
+        <p id="location" class="text-secondary flex">
+          <i>{{ props.location }} -  {{ props.year }}</i>
+        </p>
+    </div>
+      <p class="align-self-center mt-3 lg-mt-0" align="justify">
+        {{ props.description }}
+      </p>
+    </div>
+    <button class="rounded mt-2" @click="isOpen=true"> Open Project </button>
+    <div class="project-show" v-if="isOpen">
+      <div class="data-detail">
+        <p> {{ props.detail }}</p>
+      </div>
+      <button class="rounded mt-2" @click="isOpen=false"> Close Project </button>
+    </div>
+  </div>
+</template>
+
 <script setup>
 const props = defineProps({
   year: Number,
@@ -5,28 +33,14 @@ const props = defineProps({
   location: String,
   description: String,
   yearColor: String,
+  image:String,
+  detail:String
 });
+import { ref } from 'vue'
+
+const isOpen = ref(false)
 </script>
 
-<template>
-  <div class="row px-3 py-2">
-    <div class="col-md-4 p-4">
-      <p id="year" :style="{ color: props.yearColor ?? 'blue' }">
-        {{ props.year }}
-      </p>
-      <p id="job">{{ props.job }}</p>
-      <p id="location" class="text-secondary">
-        <i>{{ props.location }}</i>
-      </p>
-    </div>
-    <div class="col-md-8 d-flex" id="description">
-      <p class="align-self-center mt-3 lg-mt-0" align="justify">
-        {{ props.description }}
-      </p>
-    </div>
-    <button class="rounded mt-2"> Check Project </button>
-  </div>
-</template>
 
 <style scoped>
 .col-md-4 {
@@ -45,5 +59,29 @@ const props = defineProps({
 
 .col-md-4 #location {
   font-size: 13px;
+}
+
+.project-show{
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  /* min-height: 300px; */
+  border-radius: 5px;
+  text-align: center;
+}
+
+.data-detail{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.project-show p{
+  background-color: white;
+  /* height: 300px; */
+}
+.project-wrap{
+  position: relative;
 }
 </style>

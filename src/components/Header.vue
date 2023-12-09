@@ -5,7 +5,7 @@ import { RouterLink } from "vue-router";
 <template>
   <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">My Portofolio</a>
+      <a class="navbar-brand" href="#"> Farhan Noval Hidayat </a>
       <button
         class="navbar-toggler"
         type="button"

@@ -46,5 +46,15 @@ const props = defineProps({
         </div>
       </div>
     </div>
+
+    <div class="col-md-6">
+        <!-- make image dummy ffrom unsplash -->
+        <img
+          :src="
+            props.image ?? 'https://source.unsplash.com/1600x1500/?programming'
+          "
+          alt=""
+          class="img-fluid rounded-5" />
+      </div>
   </div>
 </template>
